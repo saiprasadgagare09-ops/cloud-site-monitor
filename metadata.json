@@ -1,0 +1,5 @@
+{
+  "name": "Cloud Site Monitor",
+  "description": "A production-style website monitoring service that tracks uptime, response times, and keyword changes in real-time.",
+  "requestFramePermissions": []
+}
