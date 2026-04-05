@@ -1,16 +1,13 @@
 FROM node:22-alpine
 
+# Cache bust - April 2026
 WORKDIR /app
 
 COPY package*.json ./
-
 RUN npm install
-
 COPY . .
-
 RUN npm run build
 
 EXPOSE 3000
-
 ENV NODE_ENV=production
 CMD ["npx", "tsx", "server.ts"]
