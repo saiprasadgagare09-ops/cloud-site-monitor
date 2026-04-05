@@ -1,11 +1,9 @@
 {
-  "$schema": "https://railway.com/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npm install"
+    "builder": "DOCKERFILE"
   },
   "deploy": {
-    "startCommand": "npm install && npx tsx server.ts",
+    "startCommand": "npx tsx server.ts",
     "restartPolicyType": "ON_FAILURE"
   }
 }
